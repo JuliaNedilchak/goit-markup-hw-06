@@ -120,6 +120,7 @@ label {
   font-size: 12px;
   line-height: 1.16;
   gap: 4px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .app-icon {
   position: absolute;
@@ -143,29 +144,54 @@ label:focus-within .app-icon {
   line-height: 1.33;
 }
 .checkbox {
+  padding: 0;
+  margin: 0;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.04em;
-
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   position: absolute;
 }
 .checked-icon {
-  display: inline-block;
+  position: absolute;
+  margin-left: -22px;
+
   width: 16px;
   height: 16px;
-  background-color: #8e8f99;
-}
-.checkbox:checked + .checked-icon {
-  background-color: #31d0aa;
+  background-image: url(../images/symbol-defs-7.svg);
+  border: 1px solid rgba(46, 47, 66, 0.4);
 }
 .check {
   display: flex;
   flex-direction: row;
   align-items: center;
+
   padding: 0px;
   gap: 8px;
   margin-top: 16px;
+  padding-left: 22px;
+}
+.checkbox:checked + .checked-icon {
+  background-image: url(./images/symbol-defs12.svg);
+  background-color: #4d5ae5;
+}
+.submit-form {
+  display: block;
+  width: 169px;
+  margin-top: 24px;
+  padding: 16px 32px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(77, 90, 229, 1);
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 input {
   padding-left: 38px;
