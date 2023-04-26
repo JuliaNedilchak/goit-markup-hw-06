@@ -459,9 +459,26 @@
         </div>
          <p class="application-title">Leave your contacts and we will call you back</p>
       <form class="application">
+        
         <label>Name
-        <input class="name" type="text" name="name" /></label>
-      </form>
+          
+        <input class="app-text" type="text" name="name" />
+        <svg class="app-icon" height="18" width="18"><use href="./images/icons6.svg#icon-name-sign"></use> </svg>
+          </label>
+        <label>Phone
+          
+          <input class="app-text" type="tel" name="phone" />
+        <svg class="app-icon" height="24" width="18"><use href="./images/icons6.svg#icon-phone-sign"></use> </svg></label>
+          <label>Email
+            <input class="app-text" type="email" name="email" />
+            <svg class="app-icon" height="24" width="18"><use href="./images/icons6.svg#icon-email-sign"></use> </svg>
+          </label>
+      <label>Comment<textarea class="app-comment"  name="comment" placeholder="text input"></textarea></label>
+      <label class="check">
+        <input class="checkbox" type="checkbox" name="checkbox"/>I accept the terms and conditions of the <a href="" class="policy">Privacy Policy</a>
+        <span class="checked-icon"></span>
+      </label>
+        </form>
         </div>
     </div>
     <script src="./js/modal.js"></script>
