@@ -104,8 +104,6 @@ header {
 }
 .application {
   margin-top: 16px;
-  padding-right: 24px;
-  padding-left: 24px;
 }
 .app-comment {
   height: 120px;
@@ -179,10 +177,8 @@ label:focus-within .app-icon {
 
 .mark {
   fill: rgba(244, 244, 253, 1);
-  position: absolute;
-  top: 25%;
-  right: 3px;
 }
+
 .checked-icon {
   position: absolute;
   margin-left: -22px;
@@ -191,6 +187,9 @@ label:focus-within .app-icon {
   background-image: url(../images/symbol-defs-7.svg);
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .check {
   display: flex;
@@ -628,9 +627,7 @@ footer {
 }
 .form {
   margin-top: 16px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 16px;
+
   background-color: var(--title-color);
   font-weight: 400;
   font-size: 12px;
